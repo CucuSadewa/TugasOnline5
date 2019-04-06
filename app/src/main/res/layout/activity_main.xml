@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : Cucu Shendar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_nim"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nim : 20160801256"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_intent_eksplisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pindah Intent Eksplisit"
+        android:layout_below="@id/btn_intent_implisit"
+        android:onClick="pindah"/>
+    <Button
+        android:id="@+id/btn_intent_implisit"
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:text="Pindah Intent Implisit"
+        android:layout_below="@id/tv_nama"
+        android:onClick="pindah"/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/titik_koma"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
